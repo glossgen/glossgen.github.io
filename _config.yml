@@ -1,0 +1,108 @@
+title: GlossGen
+tagline: Transform Your Content into Intelligent Glossaries
+description: >-
+  GlossGen - The intelligent glossary generation platform that transforms your content
+  into comprehensive, organized knowledge bases.
+email: contact@glossgen.com
+baseurl: ""
+url: ""
+repository: glossgen/glossgen.github.io
+github_username: glossgen
+
+# Theme settings
+theme: chulapa-jekyll
+remote_theme: dieghernan/chulapa
+
+# Theme colors
+chulapa-skin: 
+  theme_color: "#4A90E2"
+  autothemer: true
+  vars:
+    primary: "#4A90E2"
+    navbar-light-brand-color: "#4A90E2"
+    navbar-light-brand-hover-color: "#2C3E50"
+
+# Navigation
+navbar:
+  style: "light"
+  brand:
+    img: "/assets/images/logo.svg"
+  nav:
+    - title: Features
+      url: /features
+    - title: Documentation
+      url: /docs
+    - title: Pricing
+      url: /pricing
+    - title: Blog
+      url: /blog
+  nav_button:
+    - title: Sign In
+      url: "#"
+      class: "btn btn-outline-primary"
+    - title: Get Started
+      url: "#"
+      class: "btn btn-primary ml-2"
+
+# Footer
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/glossgen"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter"
+      url: "#"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "#"
+
+# Collections
+collections:
+  features:
+    output: true
+  docs:
+    output: true
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-include-cache
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+      header_type: "base"
+      include_on_search: true
+      show_date: false
+      show_author: false
+
+# Pagination
+paginate: 5
+paginate_path: "/blog/page:num/"
+
+# Social
+social:
+  links:
+    - https://twitter.com/glossgen
+    - https://github.com/glossgen
+    - https://linkedin.com/company/glossgen
+
+# SEO
+twitter:
+  username: glossgen
+  card: summary_large_image
+logo: /assets/images/logo.png
+social:
+  name: GlossGen
+  links:
+    - https://twitter.com/glossgen
+    - https://github.com/glossgen
+    - https://linkedin.com/company/glossgen

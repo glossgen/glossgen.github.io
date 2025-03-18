@@ -4,7 +4,7 @@ This is the official website for GlossGen, built with Jekyll and hosted on GitHu
 
 ## Prerequisites
 
-- Ruby version 2.7.0 or higher
+- Ruby version 3.1.6 or higher
 - RubyGems
 - GCC and Make
 
